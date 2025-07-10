@@ -18,6 +18,7 @@ const forestTheme = {
   text: "#1B5E20",
   border: "#C8E6C9",
   white: "#FFFFFF",
+  brown: "#8B593E",
   textLight: "#66BB6A",
   expense: "#C62828",
   income: "#388E3C",
@@ -59,4 +60,4 @@ export const THEMES = {
 };
 
 // 👇 change this to switch theme
-export const COLORS = THEMES.forest;
+export const COLORS = THEMES.ocean;
