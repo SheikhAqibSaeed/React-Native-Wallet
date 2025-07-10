@@ -3,9 +3,11 @@ import dotenv from 'dotenv';
 import { initDB} from './config/db.js';
 import rateLimiter from './middleware/rateLimiter.js';
 import transactionsRoutes from './routes/transactionsRoutes.js';
+import job from './config/cron.js';
 dotenv.config();
 
 const app = express();
+if(process.env.NODE_ENV === "production") job.start();
 
 // Middleware
 app.use(rateLimiter)
@@ -20,9 +22,12 @@ const PORT = process.env.PORT || 5000;
 
 
 
-// app.get('/', (req, res) => {
-//     res.send('Hello, World!111111111111');
-// });
+app.get('/api/health', (req, res) => {
+    res.status(200).json({ status: "ok"});
+});
+app.get('/', (req, res) => {
+    res.send('Hello, World!111111111111');
+});
 // connectDB = process.env.DATABASE_URL;    
 app.use('/api/transactions', transactionsRoutes)
 
