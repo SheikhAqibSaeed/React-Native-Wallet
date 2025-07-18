@@ -145,3 +145,9 @@ Wallet/
 
 ## License
 MIT
+
+
+![Sign-up](https://github.com/user-attachments/assets/66409415-4862-402d-8641-f23c97a4750b)
+![Sign-in](https://github.com/user-attachments/assets/08d4b51c-7a39-4abd-ac93-118bc916a376)
+![Main-Screen](https://github.com/user-attachments/assets/06802790-31bc-4c64-976f-8662d85fcea8)
+![Add-Screen](https://github.com/user-attachments/assets/683da2f8-b987-443c-ab13-c4c928351880)
